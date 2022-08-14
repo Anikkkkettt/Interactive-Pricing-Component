@@ -12,7 +12,7 @@ body{
    
 } 
 .dark-theme{ 
-  background-color: rgb(20, 240, 240); 
+  background-color: rgb(88, 91, 91); 
 } 
 .light-theme{ 
   background-image: url("./images/bg-pattern.svg"); 
@@ -56,6 +56,17 @@ header  .form-check .form-check-input{
   border: 0px solid white; 
   cursor: pointer; 
 } 
+.myrange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  cursor: pointer;
+}
  
  
 aside { 
@@ -225,7 +236,15 @@ hr{
     display: inline-block; 
   } 
   .subcontainer .price span:first-of-type, .subcontainer .price span:first-of-type span{ 
-  color: var(--text1); 
-  font-size: 5px;
-  }
+  color: var(--text1);   line-height: 30px;
+}
+.start {
+  flex-direction: column;
+}
+.start ul {
+  align-self: center;
+}
+.start button {
+  margin-top: 30px;
+}
 }
